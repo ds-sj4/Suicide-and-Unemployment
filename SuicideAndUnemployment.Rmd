@@ -1,0 +1,24 @@
+---
+title: "Untitled"
+author: "u2255602"
+date: "2022-12-28"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+df <- read.csv('SuicideAndUnemployment.csv', header = TRUE) %>%
+  select(-'Series.Code', -'Country.Name', -'Country.Code') %>%
+  pivot_longer(
+    c('X2002..YR2002.', 'X2003..YR2003.', 'X2004..YR2004.', 'X2005..YR2005.', 'X2006..YR2006.', 'X2007..YR2007.', 'X2008..YR2008.', 'X2009..YR2009.', 'X2010..YR2010.', 'X2011..YR2011.', 'X2012..YR2012.', 'X2013..YR2013.', 'X2014..YR2014.', 'X2015..YR2015.', 'X2016..YR2016.', 'X2017..YR2017.', 'X2018..YR2018.', 'X2019..YR2019.'), 
+    names_to = "Years", 
+    values_to = "values") %>% 
+  pivot_wider(names_from = "Series.Name", values_from = "values")
+```
+
+```{r}
+
+```

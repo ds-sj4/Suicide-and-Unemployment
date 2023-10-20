@@ -1,1 +1,2 @@
 # Suicide-and-Unemployment
+# There are many causes that explain suicide rates across the world. Socioeconomic situations such as unemployment, are one of the causes climbing to the top of reasons for committing suicide since the Great Recession. Using Linear Regression analysis, the relationship between the suicide mortality rate and unemployment for different regions can be found so as to determine the effect of geographically centered socioeconomic events on suicides.
